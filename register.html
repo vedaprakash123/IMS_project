@@ -1,0 +1,221 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+<body>
+    <form method="POST" action="/candidate_register">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" class="form-control" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" class="form-control" id="age" name="age">
+          </div>
+          <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        <div class="form-group">
+          <label for="qualification">Qualification:</label>
+          <input type="text" class="form-control" id="qualification" name="qualification">
+        </div>
+        <div class="form-group">
+            <label for="jobID">jobID:</label>
+            <input type="text" class="form-control" id="jobID" name="jobID">
+          </div>
+          <div class="form-group">
+            <label for="college">College:</label>
+            <input type="text" class="form-control" id="college" name="college">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+    <script scr="js/bootstrap.bundle.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background: darkcyan;
+      }
+      .row{
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 12px 12px 22px grey;
+      }
+      .img{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      .btnl{
+        border:none;
+        outline: none;
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        color:white;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+      .btnl:hover{
+        background-color: white;
+        border: 1px solid;
+        color: black;
+      }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <!-- <div class="container-fluid p-3 mb-2 bg-success text-white">
+    <div class="row">
+      <div class="col">
+        Candidates register form
+      </div>
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+      <div class="col">
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-outline-primary">login in</button>
+      </div>
+    </div>
+  </div>
+    <div class="container bg-success">
+    <div class="row">
+        <div class="col">
+            <form method="POST" action="savetodb">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">name</label>
+                  <input type="text" name="name" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">email</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <center>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </center>
+              </form>
+        </div>
+    </div>
+    </div>
+ -->
+
+    <!-- navbar -->
+    <div class="row">
+      <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <div class="container-fluid">
+            <h4 class="navbar-brand">
+              <img src="https://th.bing.com/th?q=V+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247" alt="" width="30" height="23" class="d-inline-block align-text-bottom">
+              InTerN
+            </h4>
+          </div>
+        <div class="container mx-5"></div>
+          <div class="collapse navbar-collapse my-7 mx-3" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sign in
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/savetodb">Sign up</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/loginauth">Login</a></li>
+                <li><a class="dropdown-item" href="/adminauth">Admin Login</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </div> 
+
+
+    
+
+
+    <Section class="Form my-4 mx-5">
+      <div class="container">
+        <div class="row no-gutters" style="background-color:  #e3f2fd;">
+          <div class="col-lg-5">
+            <div class="container" style="height: 75px;"></div>
+            <img src="https://www.hannonhill.com/_images/cascade-cms/group-assemling-colorful-puzzle-pieces.jpg" class="img-fluid" alt="" style="width: 400px; height: 380px;border-radius: 20px;">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+            <h4>Create new Account</h4>
+
+            <form method="POST" action="savetodb">
+              <div class="form-row">
+                <div class="col-lg-11">
+                  <input type="text" placeholder=" Enter Name"  name="name" class="form-control my-3 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-11">
+                  <input type="email" placeholder="Enter Email" name="email" class="form-control my-3 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-11">
+                  <input type="text" placeholder="Enter password" name="password" class="form-control my-3 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <button type="submit" class="btnl mt-3 mb-5">Register</button>
+                </div>
+              </div>
+              <p>Already have an account? <a href="/loginauth">Login here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </Section>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

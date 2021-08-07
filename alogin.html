@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: darkcyan;
+    }
+    .img{
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+    .row{
+      background-color: white;
+      border-radius: 30px;
+      box-shadow: 12px 12px 22px grey;
+    }
+    .btnl{
+      border:none;
+      outline: none;
+      height: 50px;
+      width: 100%;
+      background-color: black;
+      color:white;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .btnl:hover{
+      background-color: white;
+      border: 1px solid;
+      color: black;
+    }
+    </style>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  
+    <div class="container-fluid">
+    <!-- navbar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+          <div class="container-fluid">
+            <div class="container-fluid">
+              <h4 class="navbar-brand">
+                <img src="https://th.bing.com/th?q=V+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247" alt="" width="30" height="23" class="d-inline-block align-text-bottom">
+                InTerN
+              </h4>
+            </div>
+          <div class="container mx-5"></div>
+            <div class="collapse navbar-collapse my-7 mx-3" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/loginauth">BackToLogin</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </div> 
+    </div>
+
+    
+
+
+
+    <Section class="Form my-4 mx-5 py-5">
+      <div class="container">
+        <div class="row no-gutters" style="background-color:  #e3f2fd;">
+          <div class="col-lg-5">
+            <div class="container" style="height: 35px;"></div>
+            <img src="https://motivac.io/assets/images/hero.png" class="img-fluid" alt="" style="width: 400px; height: 380px;border-radius: 20px;">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+            <h4>Admin Login</h4>
+
+            <form method="POST" action="adminauth">
+              <div class="form-row">
+                <div class="col-lg-9">
+                  <input type="email" placeholder="email" name="email" class="form-control my-3 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-9">
+                  <input type="password" placeholder="******" name="password" class="form-control my-3 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <button type="submit" class="btnl mt-3 mb-5">Login</button>
+                </div>
+              </div>
+              <a href="http://">Forgot Password</a>
+              <p>Go back to user Sign up? <a href="/savetodb">Click here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </Section>

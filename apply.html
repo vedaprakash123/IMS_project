@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+<body>
+    <div class="container-fluid" style="background-color:#e2ebee;">
+
+        <div class="row">
+            <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+              <div class="container-fluid">
+                <div class="container-fluid">
+                  <h4 class="navbar-brand">
+                    <img src="https://th.bing.com/th?q=V+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247" alt="" width="30" height="23" class="d-inline-block align-text-bottom">
+                    InTerN
+                  </h4>
+                </div>
+              <div class="container mx-5"></div>
+                <div class="collapse navbar-collapse my-7 mx-3" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/home">Back</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="/login" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Logout
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/loginauth">Login</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/savetodb">Sign up</a></li>
+                        <li><a class="dropdown-item" href="/adminauth">Admin Login</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </nav>
+          </div> 
+        
+
+        <form method="POST" action="formapplied">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="exampleInputName1" name="name" aria-describedby="NameHelp" placeholder="Enter Name">
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="example@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Age</label>
+                <input type="number" class="form-control" id="exampleInputName1" name="age" aria-describedby="NameHelp"  placeholder="Enter valid age">
+              </div>
+              <div class="mb-3">
+                <label for="form-select" class="form-label">Gender</label>
+                <select id="form-select" class="form-select" name="gender">
+                    <option selected>Select</option>
+                    <option value="MALE">Male</option>
+                    <option value="FEMALE">Female</option>
+                    <option value="OTHERS">Others</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Applying For</label>
+                <input type="text" class="form-control" id="exampleInputName1" name="jobID" aria-describedby="NameHelp" placeholder="Eg:Web Development">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Your Skills Asset</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="skills"  placeholder="Enter your skills"></textarea>
+              </div>
+              <center><button type="submit" class="btn btn-secondary my-4">Submit</button></center> 
+          </form>
+    
+    </div>
+    
+    <script scr="js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+

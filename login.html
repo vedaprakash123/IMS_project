@@ -1,0 +1,184 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Login form</title>
+</head>
+<body>
+  <center><h2>Admin Login form</h2></center>
+  <div class="container" style="background-color: lightgrey;">
+    <div class="row">
+      <div class="col">
+        <form method="POST" action="/adminauth">
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="text" name= "email" class="form-control" id="exampleInputEmail1" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input
+              type="password" name = "password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+          <center>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </center>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: darkcyan;
+    }
+    .row{
+      background-color: white;
+      border-radius: 30px;
+      box-shadow: 12px 12px 22px grey;
+    }
+    .img{
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+    .btnl{
+      border:none;
+      outline: none;
+      height: 50px;
+      width: 100%;
+      background-color: black;
+      color:white;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .btnl:hover{
+      background-color: white;
+      border: 1px solid;
+      color: black;
+    }
+    </style>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  
+  <div class="container-fluid">
+  <!-- navbar -->
+  <div class="row">
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <div class="container-fluid">
+          <h4 class="navbar-brand">
+            <img src="https://th.bing.com/th?q=V+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&adlt=moderate&t=1&mw=247" alt="" width="30" height="23" class="d-inline-block align-text-bottom">
+            InTerN
+          </h4>
+        </div>
+      <div class="container mx-5"></div>
+        <div class="collapse navbar-collapse my-7 mx-3" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Login
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/loginauth">Login</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/savetodb">Sign up</a></li>
+                <li><a class="dropdown-item" href="/adminauth">Admin Login</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  </div> 
+
+  </div>
+
+    <Section class="Form my-4 mx-5 py-5">
+      <div class="container">
+        <div class="row no-gutters" style="background-color:  #e3f2fd;">
+          <div class="col-lg-5">
+            <div class="container" style="height: 35px;"></div>
+            <img src="https://thumbs.dreamstime.com/b/successfully-ascend-%C2%A0success-climb-successfully-ascend-%C2%A0success-climbl-illustration-isolated-145332337.jpg" class="img-fluid" alt="" style="width: 400px; height: 380px;border-radius: 20px;">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+            <h4>Sign into your account</h4>
+
+            <form method="POST" action="loginauth">
+              <div class="form-row">
+                <div class="col-lg-9">
+                  <input type="email" placeholder="email" name="email" class="form-control my-3 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-9">
+                  <input type="password" placeholder="******" name="password" class="form-control my-3 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <button type="submit" class="btnl mt-3 mb-5">Login</button>
+                </div>
+              </div>
+              <a href="http://">Forgot Password</a>
+              <p>Don't have an account? <a href="/savetodb">Register here</a></p>
+              <p>Admin login? <a href="/adminauth">Click here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </Section>
+
+    <!-- <h2>candidates register</h2>
+    <div class="container bg-danger">
+    <div class="row">
+        <div class="col">
+            <form method="POST" action="loginauth">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">email</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <center>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </center>
+              </form>
+        </div>
+    </div>
+    </div> -->
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
